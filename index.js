@@ -24,7 +24,7 @@ app.get('/*', function(req, res) {
 	url = url.slice(1,url.length);
 	urlList[potato] = url;
 	result.originalUrl = url;
-	result.shortUrl = "localhost:5000/" + potato;
+	result.shortUrl = "https://lit-brook-34966.herokuapp.com/" + potato;
 	result = JSON.stringify(result);
 	res.end(result);
 })
