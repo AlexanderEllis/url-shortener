@@ -1,0 +1,22 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Given a longer url, this small app will return a shortened link to the same website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "url",
+    "shortener"
+  ],
+  "author": "Alex Ellis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "node": "0.0.0"
+  },
+  "engines": {
+    "node": "4.2.3"
+  }
+}
