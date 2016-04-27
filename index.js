@@ -6,6 +6,7 @@ var url;
 
 
 app.get('/*', function(req, res) {
+	res.setHeader('Content-Type', 'application/json');
 	if (req.url.indexOf("http://www.") < 0) {
 		url = req.url;
 		url = url.slice(1,url.length);
