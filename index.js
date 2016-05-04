@@ -23,12 +23,12 @@ app.get('/*', function(req, res) {
 		}
 	}
 	var result = {};
-	var potato = Math.floor(Math.random() * 9999);
+	var redirectID = Math.floor(Math.random() * 9999);
 	url = req.url;
 	url = url.slice(1,url.length);
 	urlList[potato] = url;
 	result.originalUrl = url;
-	result.shortUrl = "https://lit-brook-34966.herokuapp.com/" + potato;
+	result.shortUrl = "https://lit-brook-34966.herokuapp.com/" + redirectID;
 	result = JSON.stringify(result);
 	res.end(result);
 })
